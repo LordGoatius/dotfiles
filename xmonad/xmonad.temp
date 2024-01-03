@@ -1,0 +1,17 @@
+import XMonad
+
+import XMonad.Util.EZConfig
+import XMonad.Util.Ungrab
+
+myTerminal = "kitty"
+myBrowser  = "firefox"
+
+main :: IO ()
+main = xmonad $ def {
+    modMask = mod4Mask
+    }
+    `additionalKeysP`
+    [ ("M-l", spawn "xscreensaver-command -lock")
+    , ("M-t", spawn myTerminal)
+    , ("M-f", spawn myBrowser) 
+    ]
