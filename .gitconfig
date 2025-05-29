@@ -1,0 +1,40 @@
+[user]
+    name = Jimmy Ostler
+    username = LordGoatius
+    email = jtostler1@gmail.com
+[core]
+    editor = nvim
+    abbrev = 12
+[pretty]
+    fixes = Fixes: %h (\"%s\")
+[commit]
+    template = ~/.gitmessage
+[init]
+    defaultBranch = main
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[cinnabar]
+	version-check = 1704365193
+[sendemail]
+    from = Jimmy Ostler <jtostler1@gmail.com>
+    smtpserver = smtp.gmail.com
+    smtpuser = jtostler1@gmail.com
+    smtpencryption = tls
+    smtpserverport = 587
+	smtppass = wton rgrm vchm yqsn
+[alias]
+    s = status
+    c = commit -s
+    a = add
+[pull]
+	rebase = true
+[credential]
+	helper = cache
+[submodule]
+	recurse = true
+[push]
+	recurseSubmodules = on-demand

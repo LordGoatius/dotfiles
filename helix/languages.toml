@@ -1,0 +1,10 @@
+[[language]]
+name = "rust"
+scope = "source.rust"
+file-types = ["rs"]
+roots = ["Cargo.toml"]
+language-servers = [ "rust-analyzer" ]
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+args = ["--stdio"]
