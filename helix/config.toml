@@ -1,15 +1,23 @@
-theme = "jimmy_dark"
+theme = "jimmy_dark_2"
 
 [editor]
 line-number = "relative"
 mouse = false
 auto-completion = true
+bufferline = "always"
+end-of-line-diagnostics = "warning"
+color-modes = true
 
+[editor.gutters]
+layout = ["diff", "spacer", "line-numbers", "spacer"]
+
+[editor.gutters.line-numbers]
+min-width = 0
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
-select = "underline"
+select = "block"
 
 [editor.auto-pairs]
 '(' = ')'
@@ -25,4 +33,15 @@ hidden = false
 [editor.lsp]
 enable = true
 
+[editor.statusline]
+left = ["mode", "separator", "version-control", "file-name", "read-only-indicator"]
+center = []
+right = ["diagnostics", "file-encoding", "file-type", "position"]
+separator = " "
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
 
+[editor.inline-diagnostics]
+cursor-line = "disable"
+other-lines = "disable"

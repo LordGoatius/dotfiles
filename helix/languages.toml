@@ -1,10 +1,21 @@
+use-grammars = { only = [ "rust", "c", "cpp" ] }
+
+[language-server.clangd]
+config = { "fallbackFlags" = [ "-std=c23", "-Wall", "-pedantic" ] }
+
+[language-server.rust-analyzer.config.cargo]
+features = "all"
+
 [[language]]
 name = "rust"
-scope = "source.rust"
-file-types = ["rs"]
-roots = ["Cargo.toml"]
-language-servers = [ "rust-analyzer" ]
+auto-format = false
 
-[language-server.rust-analyzer]
-command = "rust-analyzer"
-args = ["--stdio"]
+[[language]]
+name = "c"
+indent = { unit = "\t", tab-width = 4 }
+roots = [ ".git" ]
+
+[[language]]
+name = "cpp"
+indent = { unit = "\t", tab-width = 4 }
+roots = [ ".git" ]

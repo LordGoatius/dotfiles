@@ -1,0 +1,252 @@
+"attribute" = { fg = "vscYellow" }
+
+"type" = { fg = "vscBlueGreen" }
+"type.builtin" = { fg = "vscBlue" }
+"type.parameter" = { fg = "vscBlue" }
+"type.enum.variant" = { fg = "vscAccentBlue" }
+
+"lsp.type.type" = { fg = "vscBlueGreen" }
+"lsp.type.typeParameter" = { fg = "vscBlueGreen" }
+"lsp.type.macro" = { fg = "vscAccentBlue" }
+"lsp.type.enumMember" = { fg = "vscAccentBlue" }
+"lsp.type.member" = { fg = "vscYellow" }
+"lsp.type.keyword" = { fg = "vscBlue" }
+
+"constructor" = { fg = "vscAccentBlue" }
+
+# "constant"                  = "constant"
+# "constant.builtin"          = "blue2"
+"constant" = { fg = "vscAccentBlue" }
+"constant.character"        = "orange"
+"constant.character.escape" = "gold"
+"constant.numeric"          = "pale_green"
+"constant.builtin" = { fg = "vscBlue" }
+
+"string.regexp" = { fg = "vscOrange" }
+"string" = { fg = "vscOrange" }
+
+"comment" = { fg = "vscGreen" }
+# "comment.note" = { fg = "vscBlueGreen", modifiers = ["bold"] }
+# "comment.warning" = { fg = "vscYellowOrange", modifiers = ["bold"] }
+# "comment.error" = { fg = "vscRed", modifiers = ["bold"] }
+
+"variable" = { fg = "vscLightBlue" }
+"variable.builtin" = { fg = "vscBlue" }
+"variable.parameter" = { fg = "vscLightBlue" }
+# "variable.parameter.reference" = { fg = "vscLightBlue" }
+# "variable.member" = { fg = "vscLightBlue" }
+
+"label" = { fg = "vscLightBlue" }
+
+"punctuation" = { fg = "vscFront" }
+"punctuation.bracket" = { fg = "vscFront" }
+"punctuation.special" = { fg = "vscFront" }
+"punctuation.delimiter" = { fg = "vscFront" }
+
+"keyword" = { fg = "vscBlue" }
+"keyword.control" = { fg = "vscPink" }
+"keyword.directive" = { fg = "vscPink" }
+"keyword.conditional" = { fg = "vscPink" }
+"keyword.repeat" = { fg = "vscPink" }
+"keyword.return" = { fg = "vscPink" }
+"keyword.exception" = { fg = "vscPink" }
+"keyword.import" = { fg = "vscPink" }
+
+"operator" = { fg = "vscFront" }
+"module" = { fg = "vscBlueGreen" }
+"namespace" = { fg = "vscBlueGreen" }
+
+"function" = { fg = "vscYellow" }
+"function.builtin" = { fg = "vscYellow" }
+"function.macro" = { fg = "vscAccentBlue" }
+"function.method" = { fg = "vscYellow" }
+
+"tag" = { fg = "vscBlue" }
+"tag.builtin" = { fg = "vscBlue" }
+# "tag.delimiter" = { fg = "vscGray" }
+# "tag.attribute" = { fg = "vscLightBlue" }
+
+"markup.heading" = { fg = "vscBlue", modifiers = ["bold"] }
+"markup.list.checked" = { fg = "vscYellowOrange", bg = "vscBack", modifiers = ["bold"] }
+"markup.list.unchecked" = { fg = "vscYellowOrange", bg = "vscBack", modifiers = ["bold"] }
+"markup.strong" = { fg = "vscBlue", modifiers = ["bold"] }
+"markup.bold" = { fg = "vscBlue", modifiers = ["bold"] }
+"markup.italic" = { fg = "vscFront", italic = true }
+"markup.strikethrough" = { fg = "vscFront",  modifiers = ["crossed_out"] }
+"markup.link.label" = { fg = "vscLightBlue" }
+"markup.link.url" = { fg = "vscFront" }
+"markup.raw" = { fg = "vscFront" }
+# "markup.raw.markdown" = { fg = "vscOrange" }
+"markup.raw.inline" = { fg = "vscOrange" }
+# "markup.underline" = { fg = "vscYellowOrange", underline = true }
+
+"diff" = { fg = "black" }
+"diff.plus"  = { fg = "black", bg = "vscDiffGreenLight", modifiers = ["dim"] }
+"diff.minus" = { fg = "black", bg = "vscDiffRedLight" , modifiers = ["dim"] }
+"diff.delta" = { fg = "black", bg = "vscDiffRedDark"  , modifiers = ["dim"] }
+
+"text" = { fg = "vscFront" }
+
+## ---------------------------- COPY PASTED ----------------------------
+"ui.background"              = { fg = "white" }
+"ui.window"                  = { bg = "widget" }
+"ui.popup"                   = { fg = "text", bg = "widget" }
+"ui.help"                    = { fg = "text", bg = "widget" }
+"ui.menu"                    = { fg = "text", bg = "widget" }
+"ui.menu.selected"           = { bg = "dark_blue2" }
+# TODO: Alternate bg colour for `ui.cursor.match` and `ui.selection`.
+"ui.cursor"                  = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursor.primary"          = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursor.match"            = { bg = "#3a3d41", underline.style = "line" }
+"ui.selection"               = { bg = "#3a3d41" }
+"ui.selection.primary"       = { bg = "dark_blue" }
+"ui.linenr"                  = { fg = "dark_gray" }
+"ui.linenr.selected"         = { fg = "light_gray2" }
+"ui.cursorline.primary"      = { bg = "dark_gray3" }
+
+"ui.statusline"              = { fg = "light_green", bg = "dark_green2" }
+"ui.statusline.normal"       = { fg = "dark_gray2", bg = "pale_green2" }
+"ui.statusline.insert"       = { fg = "black", bg = "yellow" }
+"ui.statusline.select"       = { fg = "black", bg = "magenta" }
+"ui.statusline.inactive"     = { fg = "white", bg = "widget" }
+"ui.statusline.separator"    = { fg = "pale_green2" }
+
+"ui.bufferline"              = { fg = "text", bg = "dark_gray3", modifiers = ["italic"] }
+"ui.bufferline.active"       = { fg = "light_gray3", bg = "black", modifiers = ["italic", "bold"]}
+"ui.bufferline.background"   = { fg = "light_gray3", bg = "dark_gray3", modifiers = ["italic"] }
+
+"ui.text"                    = { fg = "text" }
+"ui.text.focus"              = { fg = "white" }
+"ui.virtual.whitespace"      = { fg = "#3e3e3d" }
+"ui.virtual.ruler"           = { bg = "borders" }
+"ui.virtual.indent-guide"    = { fg = "dark_gray4" }
+"ui.virtual.inlay-hint"      = { fg = "dark_gray5"}
+"ui.virtual.jump-label"      = { fg = "dark_gray", modifiers = ["bold"] }
+"ui.highlight.frameline"     = { bg = "#4b4b18" }
+"ui.debug.active"            = { fg = "#ffcc00" }
+"ui.debug.breakpoint"        = { fg = "#e51400" }
+"ui.picker.header.column"    = { underline.style = "line" }
+"ui.picker.header.column.active" = { fg ="white", underline.style = "line" }
+"warning"                    = { fg = "gold2" }
+"error"                      = { fg = "red" }
+"info"                       = { fg = "light_blue" }
+"hint"                       = { fg = "light_gray3" }
+"diagnostic.error".underline = { color = "red", style = "curl" }
+"diagnostic".underline       = { color = "gold", style = "curl" }
+"diagnostic.unnecessary"     = { modifiers = ["dim"] }
+"diagnostic.deprecated"      = { modifiers = ["crossed_out"] }
+
+[palette]
+vscFront = '#D4D4D4'
+vscBack = '#1F1F1F'
+
+vscTabCurrent = '#1F1F1F'
+vscTabOther = '#2D2D2D'
+vscTabOutside = '#252526'
+
+vscLeftDark = '#252526'
+vscLeftMid = '#373737'
+vscLeftLight = '#636369'
+
+vscPopupFront = '#BBBBBB'
+vscPopupBack = '#202020'
+vscPopupHighlightBlue = '#04395E'
+vscPopupHighlightGray = '#343B41'
+
+vscSplitLight = '#898989'
+vscSplitDark = '#444444'
+vscSplitThumb = '#424242'
+
+vscCursorDarkDark = '#222222'
+vscCursorDark = '#51504F'
+vscCursorLight = '#AEAFAD'
+vscSelection = '#264F78'
+vscLineNumber = '#5A5A5A'
+
+vscDiffRedDark = '#4B1818'
+vscDiffRedLight = '#6F1313'
+vscDiffRedLightLight = '#FB0101'
+vscDiffGreenDark = '#373D29'
+vscDiffGreenLight = '#4B5632'
+vscSearchCurrent = '#515c6a'
+vscSearch = '#613315'
+
+vscGitAdded = '#81b88b'
+vscGitModified = '#e2c08d'
+vscGitDeleted = '#c74e39'
+vscGitRenamed = '#73c991'
+vscGitUntracked = '#73c991'
+vscGitIgnored = '#8c8c8c'
+vscGitStageModified = '#e2c08d'
+vscGitStageDeleted = '#c74e39'
+vscGitConflicting = '#e4676b'
+vscGitSubmodule = '#8db9e2'
+
+vscContext = '#404040'
+vscContextCurrent = '#707070'
+
+vscFoldBackground = '#202d39'
+
+vscSuggestion = '#6A6A6A'
+
+vscGray = '#808080'
+vscViolet = '#646695'
+vscBlue = '#569CD6'
+vscAccentBlue = '#4FC1FF'
+vscDarkBlue = '#223E55'
+vscMediumBlue = '#18a2fe'
+vscDisabledBlue = '#729DB3'
+vscLightBlue = '#9CDCFE'
+vscGreen = '#6A9955'
+vscBlueGreen = '#4EC9B0'
+vscLightGreen = '#B5CEA8'
+vscRed = '#F44747'
+vscOrange = '#CE9178'
+vscLightRed = '#D16969'
+vscYellowOrange = '#D7BA7D'
+vscYellow = '#DCDCAA'
+vscDarkYellow = '#FFD602'
+vscPink = '#C586C0'
+
+vscDimHighlight = '#51504F'
+
+# ---- NOT CUSTOM -----
+white = "#ffffff"
+orange = "#ce9178"
+gold = "#d7ba7d"
+gold2 = "#cca700"
+pale_green = "#b5cea8"
+pale_green2 = "#008f11"
+dark_green = "#6A9955"
+dark_green2 = "#113311"
+light_green = "#00f73f"
+light_gray = "#d4d4d4"
+light_gray2 = "#c6c6c6"
+light_gray3 = "#eeeeee"
+dark_gray = "#858585"
+dark_gray2 = "#1e1e1e"
+dark_gray3 = "#282828"
+dark_gray4 = "#404040"
+dark_gray5 = "#8b949e"
+blue = "#007acc"
+blue2 = "#569CD6"
+blue3 = "#6796E6"
+blue4 = "#1b81a8"
+light_blue = "#75beff"
+decl_macro = "#4fc1ff"
+dark_blue = "#264f78"
+dark_blue2 = "#094771"
+red = "#ff1212"
+orange_red = "#f14c4c"
+
+type = "#4EC9B0"
+special = "#C586C0"
+variable = "#9CDCFE"
+fn_declaration = "#DCDCAA"
+constant = "#4FC1FF"
+
+background = "#ffffff"
+text = "#d4d4d4"
+cursor = "#a6a6a6"
+widget = "#252526"
+borders = "#323232"

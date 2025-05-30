@@ -8,13 +8,13 @@
 "constant.character"        = "orange"
 "constant.character.escape" = "gold"
 "constant.numeric"          = "pale_green"
-"constructor"               = "type"
+"constructor"               = "decl_macro"
 "diff.delta"                = "blue4"
 "diff.minus"                = "orange_red"
 "diff.plus"                 = "dark_green2"
 "function"                  = "fn_declaration"
 "function.builtin"          = "fn_declaration"
-"function.macro"            = "blue2"
+"function.macro"            = "decl_macro"
 "keyword"                   = "blue2"
 "keyword.control"           = "special"
 "keyword.directive"         = "special"
@@ -29,8 +29,8 @@
 "string.regexp"             = "gold"
 "tag"                       = "blue2"
 "type"                      = "type"
-"type.builtin"              = "type"
-"type.enum.variant"         = "constant"
+"type.builtin"              = "blue2"
+"type.enum.variant"         = "decl_macro"
 "variable"                  = "variable"
 "variable.builtin"          = "blue2"
 "variable.other.member"     = "variable"
@@ -63,13 +63,16 @@
 "ui.linenr"                  = { fg = "dark_gray" }
 "ui.linenr.selected"         = { fg = "light_gray2" }
 "ui.cursorline.primary"      = { bg = "dark_gray3" }
-"ui.statusline"              = { fg = "white", bg = "dark_green2" }
+
+"ui.statusline"              = { fg = "light_green", bg = "dark_green2" }
 "ui.statusline.inactive"     = { fg = "white", bg = "widget" }
 "ui.statusline.insert"       = { fg = "white", bg = "yellow" }
 "ui.statusline.select"       = { fg = "white", bg = "magenta" }
-"ui.bufferline"              = { fg = "text", bg = "widget" }
-"ui.bufferline.active"       = { fg = "white", bg = "blue" }
-"ui.bufferline.background"   = { bg = "background" }
+
+"ui.bufferline"              = { fg = "text", bg = "dark_gray3", modifiers = ["italic"] }
+"ui.bufferline.active"       = { fg = "light_gray3", bg = "black", modifiers = ["italic", "bold"]}
+"ui.bufferline.background"   = { fg = "light_gray3", bg = "dark_gray3", modifiers = ["italic"] }
+
 "ui.text"                    = { fg = "text" }
 "ui.text.focus"              = { fg = "white" }
 "ui.virtual.whitespace"      = { fg = "#3e3e3d" }
@@ -98,7 +101,8 @@ gold = "#d7ba7d"
 gold2 = "#cca700"
 pale_green = "#b5cea8"
 dark_green = "#6A9955"
-dark_green2 = "#487e02"
+dark_green2 = "#113311"
+light_green = "#00f73f"
 light_gray = "#d4d4d4"
 light_gray2 = "#c6c6c6"
 light_gray3 = "#eeeeee"
@@ -112,6 +116,7 @@ blue2 = "#569CD6"
 blue3 = "#6796E6"
 blue4 = "#1b81a8"
 light_blue = "#75beff"
+decl_macro = "#4fc1ff"
 dark_blue = "#264f78"
 dark_blue2 = "#094771"
 red = "#ff1212"
