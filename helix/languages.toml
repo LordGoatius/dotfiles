@@ -1,13 +1,18 @@
 use-grammars = { only = [ "rust", "c", "cpp" ] }
 
+[language-server.discord-rpc]
+command = "/home/lordgoatius/git/discord-rpc-lsp/discord-rpc-lsp"
+
 [language-server.clangd]
 config = { "fallbackFlags" = [ "-std=c23", "-Wall", "-pedantic" ] }
 
-[language-server.rust-analyzer.config.cargo]
-features = "all"
+[language-server.rust-analyzer.config]
+cargo = { features = "all"}
+checkOnSave = { command = "clippy" }
 
 [[language]]
 name = "rust"
+language-servers = [ "rust-analyzer", "discord-rpc" ]
 auto-format = false
 
 [[language]]
@@ -19,3 +24,6 @@ roots = [ ".git" ]
 name = "cpp"
 indent = { unit = "\t", tab-width = 4 }
 roots = [ ".git" ]
+
+[[language]]
+name = "python"

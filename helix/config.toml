@@ -4,6 +4,7 @@ theme = "jimmy_dark_2"
 line-number = "relative"
 mouse = false
 auto-completion = true
+auto-save = false
 bufferline = "always"
 end-of-line-diagnostics = "warning"
 color-modes = true
@@ -32,6 +33,8 @@ hidden = false
 
 [editor.lsp]
 enable = true
+display-messages = true
+display-inlay-hints = true 
 
 [editor.statusline]
 left = ["mode", "separator", "version-control", "file-name", "read-only-indicator"]

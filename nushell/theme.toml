@@ -1,7 +1,7 @@
 "attribute" = { fg = "vscYellow" }
 
 "type" = { fg = "vscBlueGreen" }
-# "type.builtin" = { fg = "vscBlue" }
+"type.builtin" = { fg = "vscBlue" }
 "type.parameter" = { fg = "vscBlue" }
 "type.enum.variant" = { fg = "vscAccentBlue" }
 

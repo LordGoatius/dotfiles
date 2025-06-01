@@ -825,3 +825,7 @@ $env.config = {
         }
     ]
 }
+
+source ~/.zoxide.nu
+alias core-cd = cd
+alias cd = z
