@@ -1,4 +1,4 @@
-use-grammars = { only = [ "rust", "c", "cpp" ] }
+use-grammars = { only = [ "rust", "c", "cpp", "markdown" ] }
 
 [language-server.discord-rpc]
 command = "/home/lordgoatius/git/discord-rpc-lsp/discord-rpc-lsp"
@@ -6,14 +6,16 @@ command = "/home/lordgoatius/git/discord-rpc-lsp/discord-rpc-lsp"
 [language-server.clangd]
 config = { "fallbackFlags" = [ "-std=c23", "-Wall", "-pedantic" ] }
 
-[language-server.rust-analyzer.config]
-cargo = { features = "all"}
-checkOnSave = { command = "clippy" }
-
 [[language]]
 name = "rust"
 language-servers = [ "rust-analyzer", "discord-rpc" ]
+formatter = { command = "rustfmt" , args = ["+nightly"] }
 auto-format = false
+roots = [ ".git", "Cargo.toml" ]
+
+[[language]]
+name = "markdown"
+language-servers = [ "marksman", "discord-rpc" ]
 
 [[language]]
 name = "c"
