@@ -1,4 +1,7 @@
 .gsd-keyboard.settings-ported
+enchant/
+niri/
+ow-electron/
 helix/runtime/grammars/
 .wrangler/
 Android Open Source Project/
@@ -15,6 +18,8 @@ QtProject/
 Unknown Organization/
 WowUpCf/
 audacity/
+CurseForge/
+ModrinthApp/
 balena-etcher/
 balenaEtcher/
 blender-benchmark-launcher/

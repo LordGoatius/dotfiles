@@ -1,10 +1,38 @@
-use-grammars = { only = [ "rust", "c", "cpp", "markdown" ] }
+use-grammars = { only = [ "rust", "c", "cpp", "markdown", "lalrpop", "ebnf" ] }
 
 [language-server.discord-rpc]
 command = "/home/lordgoatius/git/discord-rpc-lsp/discord-rpc-lsp"
 
 [language-server.clangd]
 config = { "fallbackFlags" = [ "-std=c23", "-Wall", "-pedantic" ] }
+
+[language-server.lalrpop-lsp]
+command = "/home/lordgoatius/.cargo/bin/lalrpop-lsp"
+
+[language-server.rust-analyzer]
+config = { "inlayHints" = { "typeHints" = false, "parameterHints" = false } }
+
+[[language]]
+name = "ebnf"
+scope = "source.ebnf"
+file-types = [ "ebnf" ]
+
+[[grammar]]
+name = "ebnf"
+source.git = "https://github.com/RubixDev/ebnf.git"
+source.rev = "8e635b0b723c620774dfb8abf382a7f531894b40"
+source.subpath= 'crates/tree-sitter-ebnf'
+
+[[language]]
+name = "lalrpop"
+language-servers = [ "lalrpop-lsp", "discord-rpc" ]
+scope = "source.lalrpop"
+file-types = ["lalrpop"]
+roots = [".git"]
+
+[[grammar]]
+name = "lalrpop"
+source = { git = "https://github.com/traxys/tree-sitter-lalrpop", rev = "8d38e9755c05d37df8a24dadb0fc64f6588ac188" }
 
 [[language]]
 name = "rust"
